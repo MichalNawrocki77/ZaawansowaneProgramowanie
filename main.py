@@ -13,7 +13,7 @@ def zadanie1():
         [0, 1, 40]
     ])
 
-    shifted = cv2.warpAffine(image,M,(image.shape[0],image.shape[1]))
+    shifted = cv2.warpAffine(image,M,(image.shape[1],image.shape[0]))
 
     cv2.imshow("shifted", shifted)
     cv2.waitKey(0)
@@ -28,7 +28,7 @@ def zadanie2():
         [0, 1, 50]
     ])
 
-    shifted = cv2.warpAffine(image,M,(image.shape[0],image.shape[1]))
+    shifted = cv2.warpAffine(image,M,(image.shape[1],image.shape[0]))
 
     cv2.imshow("shifted", shifted)
     cv2.waitKey(0)
@@ -43,7 +43,7 @@ def zadanie3():
         [0,1,image.shape[1] +50]
     ])
 
-    shifted = cv2.warpAffine(image, M, (image.shape[0],image.shape[1]))
+    shifted = cv2.warpAffine(image, M, (image.shape[1],image.shape[0]))
 
     cv2.imshow("image", shifted)
     cv2.waitKey(0)
@@ -66,4 +66,4 @@ def zadanie5():
     cv2.imshow("image", shifted)
     cv2.waitKey(0)
 
-zadanie5()
+zadanie1()
